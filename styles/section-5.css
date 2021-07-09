@@ -1,0 +1,59 @@
+/* Section-5 */
+.section-5 {
+    padding: 84px 0;
+}
+.section-5__header {
+    width: 100%;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--color-1);
+    border-bottom: currentColor;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    align-items: baseline;
+}
+.section-5__head-text {
+    font-size: 3.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.section-5__show-on-map {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 198px;
+    height: 48px;
+    border: 2px solid currentColor;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.section-5__header-link-img {
+    width: 24px;
+}
+.section-5__address-list {}
+
+@media only screen and (max-width: 360px) {
+    .section-5 {
+        padding: 41px 0;
+    }
+    .section-5__header {
+        padding-bottom: 22px;
+    }
+    .section-5__head-text {
+        font-size: 1.8rem;
+    }
+    .section-5__show-on-map {
+        width: 93px;
+        height: 30px;
+        font-size: 1.1rem;
+    }
+    .section-5__show-on-map_hidden-element {
+        display: none;
+    }
+    .section-5__header-link-img {
+        width: 18px;
+    }
+}

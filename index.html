@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit group</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container">
+            <div class="header">
+                <div class="header-block">
+                    <div class="header__logo-container">
+                        <img class="header__logo" src="images/logo.svg" alt="company logo">
+                    </div>
+                    <div class="header__contacts">
+                        <form class="header__contacts-form" action="/">
+                            <div class="header__contacts-container">
+                                <img class="header__contacts-form-icon" src="images/location-icon.svg" alt="">
+                            </div>
+                            <select name="" id="">
+                                <option value="">Харьков</option>
+                                <option value="">Киев</option>
+                            </select>
+                        </form>
+                        <a class="header__contacts-telephon" href="tel:+380503088857">
+                            <div class="header__contacts-container">
+                                <img class="header__contacts-telephon-icon" src="images/telephon-icon.svg" alt="telephon number +38(050)30-888-57">
+                            </div>
+                            +38(050)30-888-57
+                        </a>
+                    </div>
+                    <a class="button button_bg-color-gradient-blue button_text-color-white header__subscribe-button" href="#">
+                        <img class="button__icon" src="images/telegram-icon.svg" alt="button icon">
+                        Подписатся
+                    </a>
+                </div>
+                <menu class="header__menu">
+                    <div class="header__menu-item-top menu-item-top">
+                        <div class="menu-item-top__user">
+                            <button class="menu-item-top__button menu-item-top__button_vertical-line">Вход</button>
+                            <button class="menu-item-top__button">Регистрация</button>
+                        </div>
+                        <div class="menu-item-top__lang">
+                            <button class="menu-item-top__button menu-item-top__button_uppercase menu-item-top__button_active">UA</button>
+                            <button class="menu-item-top__button menu-item-top__button_uppercase">RU</button>
+                        </div>
+                    </div>
+                    <div class="header__menu-item-bottom menu-item-bottom">
+                        <button class="menu-item-bottom__button menu-item-bottom__button_active">Курсы</button>
+                        <button class="menu-item-bottom__button">Следить</button>
+                    </div>
+                </menu>
+            </div>
+            <div class="header-mobile">
+                <div class="header__logo-container">
+                    <img class="header__logo" src="images/logo.svg" alt="company logo">
+                </div>
+                <div class="header-mobile__container">
+                    <button class="header-mobile__button header-mobile__button_subscribe">
+                        <img class="header-mobile__button-image" src="images/telegram-icon.svg" alt="icon">
+                    </button>
+                    <button class="header-mobile__button header-mobile__button_telephone">
+                        <img class="header-mobile__button-image" src="images/phone.svg" alt="icon">
+                    </button>
+                    <button class="header-mobile__menu" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section_bg-color-dark-green">
+        <div class="container">
+            <div class="section-2">
+                <div class="section-2__header">
+                    <h2 class="section-2__head-text">Курсы валют</h2>
+                    <form class="section-2__header-form" action="/">
+                        <label class="section-2__header-form-label" for="quantity" id="form-label">
+                            <div class="section-2__header-form-label-active-button" id="active-button"></div>
+                            <span class="section-2__header-form-label-item">
+                                <span>Опт</span>
+                                <span>от 500$</span>
+                            </span>
+                            <span class="section-2__header-form-label-item">
+                                <span>Розница</span>
+                                <span>от 1$</span>
+                            </span>
+                        </label>
+                        <input class="section-2__header-form-input" type="checkbox" name="quantity" id="quantity">
+                    </form>
+                </div>
+                <table class="table">
+                    <thead class="table-head">
+                        <tr class="table-head__row">
+                            <th class="table-head__row-item">Валюта</th>
+                            <th class="table-head__row-item table_padding-left-5">Покупка(ОПТ)</th>
+                            <th class="table-head__row-item table_padding-left-5">Продажа(ОПТ)</th>
+                            <th class="table-head__row-item table-head__row-item_align-right">17 мая | 18:20</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__row-item table-body__row-item_vertical-middle">
+                                <h3 class="table-body__row-item-head-text">CNY/UAH</h3>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">3.75</span>
+                                <p class="table-body__row-item-number-dynamic">
+                                    <img class="table-body__row-item-number-dynamic-icon" src="images/arrow-down.svg" alt="arrow">
+                                    <span>-0.01</span>
+                                </p>
+                            </td>
+                            <td class="table-body__row-item table_padding-left-5">
+                                <span class="table-body__row-item-number-big">4.05</span>
+                            </td>
+                            <td class="table-body__row-item table-body__row-item_align-right">
+                                <span>
+                                    <button class="table-body__row-item-button link">Создать заявку</button>
+                                <p class="show-dynamic">
+                                    <img class="show-dynamic-image" src="images/graph.svg" alt="">
+                                    <a class="show-dynamic-link" href="#">Показать динамику</a>
+                                </p>
+                            </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_bg-color-light-gray">
+        <div class="container">
+            <div class="section-3">
+                <h2  class="section-3__header-text">Ежедневная информация об изменении курса</h2>
+                <a class="button button_big-size 
+            button_bg-color-gradient-blue button_text-color-white" href="#">
+                <img class="button__icon section-3__button" src="images/telegram-icon.svg" alt="button icon">
+                Подпишись на наш "TELEGRAM"
+                </a>
+                <form class="section-3__form" action="/">
+                    <input class="section-3__form-input" type="email" name="email" placeholder="Ваш электронный адрес" required>
+                    <button type="submit"  class="button button_big-size button_bg-color-green button_text-color-yellow  section-3__button">Подписатся на рассилку</button>
+                </form>
+                <img class="section-3__image" src="images/board.svg" alt="board">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_bg-color-dark-green">
+        <div class="container">
+            <div class="section-4">
+                <div class="section-4__block-1">
+                    <h2 class="section-4__header-text section-4__header-text_big">Переводы</h2>
+                    <small class="section-4__text-description">Узнать подробности и оформить перевод можна в любом из наших отделений по контактам ниже</small>
+                </div>
+                <div class="section-4__block-2">
+                    <h2 class="section-4__header-text section-4__header-text_small">Переводы за границу</h2>
+                    <small class="section-4__text-description">Стоимость платежного поручения</small>
+                </div>
+                <div class="section-4__block-3">
+                    <article class="section-4__card">
+                        <h3 class="section-4__card-head-text">Китай</h3>
+                        <p class="section-4__card-number">0.5 %</p>
+                        <img class="section-4__card-img" src="images/flag-china.svg" alt="flag of country">
+                    </article>
+                    <article class="section-4__card">
+                        <h3 class="section-4__card-head-text">Европа</h3>
+                        <p class="section-4__card-number">0.5 %</p>
+                        <img class="section-4__card-img" src="images/flag-euro.svg" alt="flag of country">
+                    </article>
+                    <article class="section-4__card">
+                        <h3 class="section-4__card-head-text">Турция</h3>
+                        <p class="section-4__card-number">0.5 %</p>
+                        <img class="section-4__card-img" src="images/flag-turki.svg" alt="flag of country">
+                    </article>
+                </div>
+                <div class="section-4__block-4">
+                    <h2 class="section-4__header-text section-4__header-text_small">Переводы по Украине</h2>
+                    <small class="section-4__text-description">Стоимость платежного поручения</small>
+                </div>
+                <div class="section-4__block-5">
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Киев</h3>
+                        <p class="section-4__card-number">0.3 %</p>
+                    </article>
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Харьков</h3>
+                        <p class="section-4__card-number">0.3 %</p>
+                    </article>
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Суммы</h3>
+                        <p class="section-4__card-number">0.3 %</p>
+                    </article>
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Одесса</h3>
+                        <p class="section-4__card-number">0.3 %</p>
+                    </article>
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Николаев</h3>
+                        <p class="section-4__card-number">0.3 %</p>
+                    </article>
+                    <article class="section-4__card-small section-4__card_change-width">
+                        <h3 class="section-4__card-head-text section-4__card-head-text_font-size">Другие</h3>
+                        <p class="section-4__card-number section-4__card-number_font-size">от 0.4 %</p>
+                        <p class="section-4__card-number section-4__card-number_font-size">до 0.8 %</p>
+                    </article>
+                </div>
+                <div class="section-4__block-6">
+                    <h2 class="section-4__header-text section-4__header-text_big">Обмен онлайн</h2>
+                    <small class="section-4__text-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_bg-color-green">
+        <div class="container">
+            <div class="section-5">
+                <div class="section-5__header">
+                    <h2 class="section-5__head-text">Контакты обменки</h2>
+                    <a class="link link_color-yellow section-5__show-on-map" href="#">
+                        <img class="section-5__header-link-img" src="images/show-on-map.svg" alt="Показать на карте">
+                        <span><span class="section-5__show-on-map_hidden-element">Показать</span> на карте</span>
+                    </a>
+                </div>
+                <ul class="section-5__address-list address-list">
+                    <li class="address-list__item address-list__item_text-color-white">
+                        <div class="address-list__item-address">
+                            <address class="address">
+                                <p class="address__big">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</p>
+                                <small class="address__small">м. Академика Барабашова</small>
+                            </address>
+                            <div class="address-list__item-address-link">
+                                <a class="link link_color-yellow link_underline link__icon" href="#">На карте</a>
+                            </div>
+                        </div>
+                        <div  class="address-list__item-phone">
+                            <a class="telephon" href="tel:0503088891">050-308-88-91</a>
+                        </div>
+                        <div  class="address-list__item-work-time work-time">
+                            <p class="work-time__item">Пн-Пт 8:00 - 17:00</p>
+                            <p class="work-time__item">Сб-Вс 8:00 - 17:00</p>
+                        </div>
+                    </li>
+                    <li class="address-list__item address-list__item_text-color-white">
+                        <div class="address-list__item-address">
+                            <address class="address">
+                                <p class="address__big">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</p>
+                                <small class="address__small">м. Академика Барабашова</small>
+                            </address>
+                            <div class="address-list__item-address-link">
+                                <a class="link link_color-yellow link_underline link__icon" href="#">На карте</a>
+                            </div>
+                        </div>
+                        <div  class="address-list__item-phone">
+                            <a class="telephon" href="tel:0503088891">050-308-88-91</a>
+                        </div>
+                        <div  class="address-list__item-work-time work-time">
+                            <p class="work-time__item">Пн-Пт 8:00 - 17:00</p>
+                            <p class="work-time__item">Сб-Вс 8:00 - 17:00</p>
+                        </div>
+                    </li>
+                    <li class="address-list__item address-list__item_text-color-white">
+                        <div class="address-list__item-address">
+                            <address class="address">
+                                <p class="address__big">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</p>
+                                <small class="address__small">м. Академика Барабашова</small>
+                            </address>
+                            <div class="address-list__item-address-link">
+                                <a class="link link_color-yellow link_underline link__icon" href="#">На карте</a>
+                            </div>
+                        </div>
+                        <div  class="address-list__item-phone">
+                            <a class="telephon" href="tel:0503088891">050-308-88-91</a>
+                        </div>
+                        <div  class="address-list__item-work-time work-time">
+                            <p class="work-time__item">Пн-Пт 8:00 - 17:00</p>
+                            <p class="work-time__item">Сб-Вс 8:00 - 17:00</p>
+                        </div>
+                    </li>
+                    <li class="address-list__item address-list__item_text-color-white">
+                        <div class="address-list__item-address">
+                            <address class="address">
+                                <p class="address__big">пр-т Юбилейный, 7а (бывш. пр-т 50 лет ВЛКСМ 7а)</p>
+                                <small class="address__small">м. Академика Барабашова</small>
+                            </address>
+                            <div class="address-list__item-address-link">
+                                <a class="link link_color-yellow link_underline link__icon" href="#">На карте</a>
+                            </div>
+                        </div>
+                        <div  class="address-list__item-phone">
+                            <a class="telephon" href="tel:0503088891">050-308-88-91</a>
+                        </div>
+                        <div  class="address-list__item-work-time work-time">
+                            <p class="work-time__item">Пн-Пт 8:00 - 17:00</p>
+                            <p class="work-time__item">Сб-Вс 8:00 - 17:00</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_bg-color-light-gray">
+        <div class="container">
+            <div class="section-6">
+                <div class="section-6__header">
+                    <h2 class="section-6__header-text">Блог</h2>
+                    <a class="section-6__link" href="#">Читать все статьи</a>
+                </div>
+                <div class="section-6__articles-container">
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector.png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a class="link" href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector (1).png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a href="#" class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector (2).png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a href="#" class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector (3).png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a href="#" class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector (4).png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a href="#" class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                    <article class="article__card-small">
+                        <a class="link" href="#">
+                            <picture class="article__image-container">
+                                <img class="article__image" src="images/cards/Vector (5).png" alt="small images">
+                            </picture>
+                        </a>
+                        <div class="article__description-container">
+                        <time  class="article__time"datetime="2008-02-14 20:00">16/06/19</time>
+                        <p class="article__description-small">
+                            <a href="#" class="link">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
+                        </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_padding-7 section_bg-color-green section_text-color-white">
+        <div class="container">
+            <div class="section-7">
+                <h2 class="section-7__header">Как вибрать правильно обменник в Харькове</h2>
+                <p class="section-7__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p  class="section-7__paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p  class="section-7__paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section section_bg-color-dark-green">
+        <div class="container">
+            <div class="footer">
+                <span class="footer__header">&#169; Kit group 2021</span>
+                <div class="footer__contacts">
+                    <ul class="contacts-social">
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/viber.svg" alt="viber contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/telegram.svg" alt="telegram contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/facebook.svg" alt="facebook contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/instagram.svg" alt="instagram contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/vk.svg" alt="vkontakte contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/twitter.svg" alt="twitter contact">
+                            </a>
+                        </li>
+                        <li class="contacts-social__item">
+                            <a class="contacts-social__link" href="#">
+                                <img class="contacts-social__image" src="images/in.svg" alt="linkidin contact">
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="footer__create-web-site">Создание сайта <a class="link_color-yellow link_underline" href="#">wu.ua</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
